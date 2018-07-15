@@ -4,7 +4,7 @@ package com.val.converter;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class NumberConverterDDT {
+public class NumberConverterDataDrivenTest {
 
     private static final NumberConverter converter = new NumberConverter();
 

@@ -1,7 +1,5 @@
 package com.val.converter;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.util.Scanner;
 
 /*
@@ -10,15 +8,11 @@ import java.util.Scanner;
 
 public class TestDataFileDao {
 
-    private static final String filePath = "./test/com.val.converter.ddt/testData.lst";
+    private static final String FILE_PATH = "/testData.lst";
     private static Scanner scanner;
 
-    static {
-        try {
-            scanner = new Scanner(new FileReader(filePath));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+    public TestDataFileDao() {
+        scanner = new Scanner(TestDataFileDao.class.getResourceAsStream(FILE_PATH));
     }
 
     public TestDataFileEntry next(){
