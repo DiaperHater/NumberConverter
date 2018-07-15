@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mvnsample" />
+        <module name="NumberToWordsConverter" />
+        <module name="numbertowordsconverter" />
       </profile>
     </annotationProcessing>
   </component>
