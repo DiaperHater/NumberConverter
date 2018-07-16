@@ -15,12 +15,20 @@ public class NumberConverter {
     private final ExponentOfThousand exponentOfThousand = new ExponentOfThousand();
     private final BigInteger ONE_THOUSAND = new BigInteger("1000");
 
+    //Перегруженый asWords(BigInteger)
+    public String asWords(long num) {
+        return asWords(BigInteger.valueOf(num));
+    }
+
+    //Перегруженый asWords(BigInteger)
+    public String asWords(String num) {
+        return asWords(new BigInteger(num));
+    }
 
     //Метод преобразующий входной параметр num
     //в его словесное представление
-    public String asWords(String num){
+    public String asWords(BigInteger number){
 
-        BigInteger number = new BigInteger(num);
         if (number.signum() == 0){
             return "ноль";
         }

@@ -19,18 +19,33 @@ public class NumberConverterTest {
     }
 
     @Test
-    public void argIsOk_returnsNumberInWordRepresentation(){
+    public void stringArgument_returnsNumberInWordRepresentation(){
         assertEquals("ноль", formatter.asWords("0"));
     }
 
     @Test
-    public void argIsOk_returnsNumberInWordRepresentation_2(){
+    public void stringArgument_returnsNumberInWordRepresentation_2(){
         assertEquals("две тысячи два", formatter.asWords("2002"));
     }
 
     @Test
-    public void argIsOk_returnsNumberInWordRepresentation_3(){
+    public void stringArgument_returnsNumberInWordRepresentation_3(){
         assertEquals("минус три", formatter.asWords("-3"));
+    }
+
+    @Test
+    public void longArgument_returnsNumberInWordRepresentation_1(){
+        assertEquals("ноль", formatter.asWords(0));
+    }
+
+    @Test
+    public void longArgument_returnsNumberInWordRepresentation__2(){
+        assertEquals("две тысячи два", formatter.asWords(2002));
+    }
+
+    @Test
+    public void longArgument_returnsNumberInWordRepresentation_3(){
+        assertEquals("минус три", formatter.asWords(-3));
     }
 
 

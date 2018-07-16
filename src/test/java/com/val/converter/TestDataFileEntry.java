@@ -6,12 +6,12 @@ package com.val.converter;
 */
 public class TestDataFileEntry {
 
-    public String argumentValue;
+    public long argumentValue;
     public String expectedValue;
 
     public TestDataFileEntry(String line) {
         String[] a = line.split("\\s?=\\s?");
-        argumentValue = a[0];
+        argumentValue = Long.parseLong(a[0]);
         expectedValue = a[1];
     }
 }
