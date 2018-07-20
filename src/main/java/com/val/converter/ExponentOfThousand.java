@@ -17,6 +17,10 @@ class ExponentOfThousand {
 
     //Метод преобразующий входной параметр num
     //в его словесное представление
+    public String asWords(long n) {
+        return asWords(new BigInteger(String.valueOf(n)));
+    }
+
     public String asWords(BigInteger n){
 
         number = n;

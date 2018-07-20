@@ -14,249 +14,56 @@ public class ExponentOfThousandTest {
 
 
     @Test(expected = IllegalArgumentException.class)
-    public void asWords_argumentIsNegative_throwsException(){
+    public void testAsWordsThrowsExceptionIfNegative(){
         BigInteger negativeNumber = BigInteger.valueOf(-2);
         exponentOfThousand.asWords(negativeNumber);
     }
 
     @Test
-    public void asWords_argumentIsOk_noException(){
-        BigInteger validNumber = BigInteger.valueOf(2);
-        exponentOfThousand.asWords(validNumber);
+    public void testAsWordsUnderOneThousand(){
+
+        long args[] = {1, 12, 95};
+        String expected[] = {"один", "двенадцать", "девяносто пять"};
+
+        for (int i = 0; i < args.length; i++){
+            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+        }
     }
 
+
+    @Test
+    public void testAsWordsThousandsOnlyEndingsCheck(){
+        long args[] = {1000, 2000, 3000, 4000, 5000, 7000, 40000, 90000, 167000};
+        String expected[] = {"одна тысяча", "две тысячи", "три тысячи", "четыре тысячи", "пять тысяч", "семь тысяч",
+                "сорок тысяч", "девяносто тысяч", "сто шестьдесят семь тысяч"};
+
+        for (int i = 0; i < args.length; i++){
+            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+        }
+    }
 
 
 
     @Test
-    public void asWords_numberUnderOneThousand_returnsNumberInWordRepresentation_1(){
-        BigInteger number = BigInteger.valueOf(1);
+    public void testAsWordsAboveThousandsEndingCheck(){
+        long args[] = {1000000, 2000000, 5000000, 21355542532L, 22497580865797L, 90086547247364591L};
+        String expected[] = {"один миллион", "два миллиона", "пять миллионов", "двадцать один миллиард"
+                ,"двадцать два триллиона", "девяносто квадриллионов"};
 
-        String expected = "один";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
+        for (int i = 0; i < args.length; i++){
+            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+        }
     }
 
     @Test
-    public void asWords_numberUnderOneThousand_returnsNumberInWordRepresentation_2(){
-        BigInteger number = BigInteger.valueOf(12);
+    public void testAsWordsAnyPositiveReturnsOnlyHighestExponentOfThousandByWords(){
+        long args[] = {1, 12, 95, 253452, 423564577, 84568356246L};
+        String expected[] = {"один", "двенадцать", "девяносто пять", "двести пятьдесят три тысячи"
+                , "четыреста двадцать три миллиона", "восемьдесят четыре миллиарда"};
 
-        String expected = "двенадцать";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
+        for (int i = 0; i < args.length; i++){
+            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+        }
     }
-
-    @Test
-    public void asWords_numberUnderOneThousand_returnsNumberInWordRepresentation_3(){
-        BigInteger number = BigInteger.valueOf(95);
-
-        String expected = "девяносто пять";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-
-
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_1(){
-        BigInteger number = BigInteger.valueOf(1000);
-
-        String expected = "одна тысяча";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_2(){
-        BigInteger number = BigInteger.valueOf(2000);
-
-        String expected = "две тысячи";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_3(){
-        BigInteger number = BigInteger.valueOf(3000);
-
-        String expected = "три тысячи";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_4(){
-        BigInteger number = BigInteger.valueOf(4000);
-
-        String expected = "четыре тысячи";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_5(){
-        BigInteger number = BigInteger.valueOf(5000);
-
-        String expected = "пять тысяч";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_6(){
-        BigInteger number = BigInteger.valueOf(7000);
-
-        String expected = "семь тысяч";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_7(){
-        BigInteger number = BigInteger.valueOf(40_000);
-
-        String expected = "сорок тысяч";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_8(){
-        BigInteger number = BigInteger.valueOf(90_000);
-
-        String expected = "девяносто тысяч";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenOneThousandAndOneMillion_returnsNumberInWordsWithCorrectEndings_9(){
-        BigInteger number = BigInteger.valueOf(167_000);
-
-        String expected = "сто шестьдесят семь тысяч";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-
-
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_1(){
-        BigInteger number = BigInteger.valueOf(1_000_000);
-
-        String expected = "один миллион";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_2(){
-        BigInteger number = BigInteger.valueOf(2_000_000);
-
-        String expected = "два миллиона";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_3(){
-        BigInteger number = BigInteger.valueOf(3_000_000);
-
-        String expected = "три миллиона";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_4(){
-        BigInteger number = BigInteger.valueOf(4_000_000);
-
-        String expected = "четыре миллиона";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_5(){
-        BigInteger number = BigInteger.valueOf(5_000_000);
-
-        String expected = "пять миллионов";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_6(){
-        BigInteger number = BigInteger.valueOf(40_000_000);
-
-        String expected = "сорок миллионов";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_7(){
-        BigInteger number = BigInteger.valueOf(50_000_000);
-
-        String expected = "пятьдесят миллионов";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_numberBetweenMillionAndBillion_returnsNumberInWordsWithCorrectEndings_8(){
-        BigInteger number = BigInteger.valueOf(90_000_000);
-
-        String expected = "девяносто миллионов";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-
-
-
-
-    @Test
-    public void asWords_bigRandomNumber_returnsNumberInWordRepresentation_1(){
-        BigInteger number = new BigInteger("400000000000");
-
-        String expected = "четыреста миллиардов";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void asWords_bigRandomNumber_returnsNumberInWordRepresentation_2(){
-        BigInteger number = new BigInteger("91000000000000000000");
-
-        String expected = "девяносто один квинтиллион";
-        String actual = exponentOfThousand.asWords(number);
-
-        assertEquals(expected, actual);
-    }
-
 
 }
