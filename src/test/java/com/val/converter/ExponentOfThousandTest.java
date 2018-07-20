@@ -11,8 +11,6 @@ public class ExponentOfThousandTest {
     private  final ExponentOfThousand exponentOfThousand = new ExponentOfThousand();
 
 
-
-
     @Test(expected = IllegalArgumentException.class)
     public void testAsWordsThrowsExceptionIfNegative(){
         BigInteger negativeNumber = BigInteger.valueOf(-2);
@@ -30,7 +28,6 @@ public class ExponentOfThousandTest {
         }
     }
 
-
     @Test
     public void testAsWordsThousandsOnlyEndingsCheck(){
         long args[] = {1000, 2000, 3000, 4000, 5000, 7000, 40000, 90000, 167000};
@@ -41,8 +38,6 @@ public class ExponentOfThousandTest {
             assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
         }
     }
-
-
 
     @Test
     public void testAsWordsAboveThousandsEndingCheck(){
