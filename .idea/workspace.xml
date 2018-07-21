@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="527b683a-5b03-40ca-b576-59dc9e2efdcb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NumberConverterTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NumberConverterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="135">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreeDigitNumberConverterTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,12 +80,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDataDrivenTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/val/converter/HighestExponentOfThousandConverter.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" />
       </list>
     </option>
   </component>
@@ -452,7 +464,7 @@
       <workItem from="1531689776987" duration="5563000" />
       <workItem from="1531696048025" duration="255000" />
       <workItem from="1531696438709" duration="3074000" />
-      <workItem from="1532206029751" duration="885000" />
+      <workItem from="1532206029751" duration="1158000" />
     </task>
     <servers />
   </component>
@@ -489,7 +501,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24357000" />
+    <option name="totallyTimeSpent" value="24630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -822,16 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/TestDataFileEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -851,8 +853,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="135">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,17 +9,17 @@ public class ThreeDigitNumberConverterTest {
     private final ThreeDigitNumberConverter instance = new ThreeDigitNumberConverter();
 
     @Test(expected = IllegalArgumentException.class)
-    public void testAsWordsNegativeThrowsException(){
+    public void testAsWordsThrowsExceptionIfNegative(){
         instance.asWords(-1);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testAsWordsBiggerThen999ThrowsException(){
+    public void testAsWordsThrowsExceptionIfBiggerThen999(){
         instance.asWords(1000);
     }
 
     @Test
-    public void testAsWordsInRangeFrom0to999(){
+    public void testAsWordsInRange0to999(){
         int args[] = {0, 100, 129, 271};
         String expected[] = {"ноль","сто", "сто двадцать девять", "двести семьдесят один"};
 
