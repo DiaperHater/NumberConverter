@@ -29,7 +29,7 @@ public class HighestExponentOfThousandConverterTest {
     }
 
     @Test
-    public void testAsWordsThousandsOnlyEndingsCheck(){
+    public void testAsWordsEndingsOfThousands(){
         long args[] = {1000, 2000, 3000, 4000, 5000, 7000, 40000, 90000, 167000};
         String expected[] = {"одна тысяча", "две тысячи", "три тысячи", "четыре тысячи", "пять тысяч", "семь тысяч",
                 "сорок тысяч", "девяносто тысяч", "сто шестьдесят семь тысяч"};
@@ -40,7 +40,7 @@ public class HighestExponentOfThousandConverterTest {
     }
 
     @Test
-    public void testAsWordsAboveThousandsEndingCheck(){
+    public void testAsWordsEndingsOfMillionsAndAbove(){
         long args[] = {1000000, 2000000, 5000000, 21355542532L, 22497580865797L, 90086547247364591L};
         String expected[] = {"один миллион", "два миллиона", "пять миллионов", "двадцать один миллиард"
                 ,"двадцать два триллиона", "девяносто квадриллионов"};
@@ -51,7 +51,7 @@ public class HighestExponentOfThousandConverterTest {
     }
 
     @Test
-    public void testAsWordsAnyPositiveReturnsOnlyHighestExponentOfThousandByWords(){
+    public void testAsWordsReturnsOnlyHighestExponentOfThousandByWords(){
         long args[] = {1, 12, 95, 253452, 423564577, 84568356246L};
         String expected[] = {"один", "двенадцать", "девяносто пять", "двести пятьдесят три тысячи"
                 , "четыреста двадцать три миллиона", "восемьдесят четыре миллиарда"};
