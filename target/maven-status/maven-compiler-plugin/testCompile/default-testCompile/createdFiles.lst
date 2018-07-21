@@ -1,0 +1,5 @@
+com/val/converter/TestDataFileDao.class
+com/val/converter/TestDataFileEntry.class
+com/val/converter/NumberConverterTest.class
+com/val/converter/HighestExponentOfThousandConverterTest.class
+com/val/converter/ThreeDigitNumberConverterTest.class

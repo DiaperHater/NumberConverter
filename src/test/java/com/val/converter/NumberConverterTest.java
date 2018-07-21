@@ -10,7 +10,7 @@ public class NumberConverterTest {
     private static final NumberConverter instance = new NumberConverter();
 
     @Test(expected = NumberFormatException.class)
-    public void testAsWordsNotANumberThenException(){
+    public void testAsWordsThrowsExceptionIfNotANumber(){
         instance.asWords("123dfr");
     }
 

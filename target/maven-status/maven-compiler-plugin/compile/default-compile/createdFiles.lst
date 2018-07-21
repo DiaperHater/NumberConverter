@@ -1,0 +1,5 @@
+com/val/converter/NamesOfNumbersDao.class
+com/val/converter/NameListDao.class
+com/val/converter/NumberConverter.class
+com/val/converter/ThreeDigitNumberConverter.class
+com/val/converter/HighestExponentOfThousandConverter.class
