@@ -16,10 +16,6 @@ Output:
 девятьсот восемьдесят семь миллионов шестьсот пятьдесят четыре тысячи триста двадцать один
 </pre>
 <hr>
-<h2>Note!!!</h2>
-Make shure that all *.lst files are in UTF-8 encoding.<br>
-Tests may fall if wrong encoding (for example Windows-1252 ).<br>
-<hr>
 <h2>DDT Testing:</h2>
 file testData.lst looks like:<br>
 <pre>
