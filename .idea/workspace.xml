@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="527b683a-5b03-40ca-b576-59dc9e2efdcb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,13 +37,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreeDigitNumberConverterTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreeDigitNumberConverterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="42" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberConverter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="method#asWords#2;class#NumberConverter#0" />
               </folding>
             </state>
           </provider>
@@ -77,7 +91,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDDT.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/TestDataFileDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/TestDataFileEntry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDataDrivenTest.java" />
@@ -86,6 +99,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" />
       </list>
     </option>
   </component>
@@ -235,32 +249,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NumberConverterTest">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="HighestExponentOfThousandConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.NumberConverter">
+    <configuration name="NumberConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.val.converter.NumberConverter" />
       <module name="number-converter" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.val.converter.ThreeDigitNumberConverter" />
+          <option name="PATTERN" value="com.val.converter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.val.converter" />
-      <option name="MAIN_CLASS_NAME" value="com.val.converter.HighestExponentOfThousandConverterTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration name="NumberConverterDataDrivenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="number-converter" />
@@ -433,19 +435,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Package" />
-      <item itemvalue="JUnit.HighestExponentOfThousandConverterTest" />
       <item itemvalue="JUnit.ThreeDigitNumberConverterTest" />
       <item itemvalue="JUnit.NumberConverterTest.testAsWordsNegative" />
       <item itemvalue="JUnit.NumberConverterTest" />
       <item itemvalue="JUnit.NumberConverterDataDrivenTest" />
+      <item itemvalue="Application.NumberConverter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumberConverter" />
         <item itemvalue="JUnit.NumberConverterTest" />
         <item itemvalue="JUnit.NumberConverterDataDrivenTest" />
         <item itemvalue="JUnit.NumberConverterTest.testAsWordsNegative" />
         <item itemvalue="JUnit.ThreeDigitNumberConverterTest" />
-        <item itemvalue="JUnit.HighestExponentOfThousandConverterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -464,7 +466,7 @@
       <workItem from="1531689776987" duration="5563000" />
       <workItem from="1531696048025" duration="255000" />
       <workItem from="1531696438709" duration="3074000" />
-      <workItem from="1532206029751" duration="1158000" />
+      <workItem from="1532206029751" duration="1954000" />
     </task>
     <servers />
   </component>
@@ -501,7 +503,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24630000" />
+    <option name="totallyTimeSpent" value="25426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -509,6 +511,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32876712" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -516,11 +519,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.20625" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42590287" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42590287" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30277777" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30277777" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -534,7 +537,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32876712" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -820,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/HighestExponentOfThousandConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -864,6 +859,17 @@
           <caret line="6" column="42" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="method#asWords#2;class#NumberConverter#0" />
           </folding>
         </state>
       </provider>

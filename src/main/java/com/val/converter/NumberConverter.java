@@ -2,6 +2,7 @@ package com.val.converter;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 /*
@@ -67,6 +68,28 @@ public class NumberConverter {
         }
 
         return result;
+    }
+
+
+    public static void main(String[] args) {
+
+        String numToConvert = "";
+        Scanner scanner = new Scanner(System.in);
+        NumberConverter nc = new NumberConverter();
+
+        System.out.println("++++Number to words converter++++");
+
+        while ( true ){
+            System.out.print("Enter the number (or 'q' for exit): ");
+            numToConvert = scanner.nextLine();
+            if (numToConvert.equals("q")){
+                break;
+            }
+            System.out.println(numToConvert +" = "+ nc.asWords(numToConvert));
+        }
+
+        System.out.println("Quit.");
+
     }
 
 
