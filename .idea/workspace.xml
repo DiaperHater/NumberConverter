@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="527b683a-5b03-40ca-b576-59dc9e2efdcb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDataDrivenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDataDrivenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/val/converter/HighestExponentOfThousand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,34 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="NumberConverterTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberConverterDataDrivenTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDataDrivenTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
-              <folding>
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,10 +49,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/val/converter/NumberConverter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterDataDrivenTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java" />
       </list>
     </option>
   </component>
@@ -232,18 +206,18 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ExponentOfThousandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighestExponentOfThousandConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="number-converter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.val.converter.*" />
+          <option name="PATTERN" value="com.val.converter.ThreeDigitNumberConverter" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.val.converter" />
-      <option name="MAIN_CLASS_NAME" value="com.val.converter.ExponentOfThousandTest" />
+      <option name="MAIN_CLASS_NAME" value="com.val.converter.HighestExponentOfThousandConverterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -259,7 +233,7 @@
       <module name="number-converter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.val.converter.*" />
+          <option name="PATTERN" value="com.val.converter.ThreeDigitNumberConverter" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -282,7 +256,7 @@
       <module name="number-converter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.val.converter.*" />
+          <option name="PATTERN" value="com.val.converter.ThreeDigitNumberConverter" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -305,7 +279,7 @@
       <module name="number-converter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.val.converter.*" />
+          <option name="PATTERN" value="com.val.converter.ThreeDigitNumberConverter" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -328,7 +302,7 @@
       <module name="number-converter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.val.converter.*" />
+          <option name="PATTERN" value="com.val.converter.ThreeDigitNumberConverter" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -426,7 +400,7 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Package" />
-      <item itemvalue="JUnit.ExponentOfThousandTest" />
+      <item itemvalue="JUnit.HighestExponentOfThousandConverterTest" />
       <item itemvalue="JUnit.ThreeDigitNumberConverterTest" />
       <item itemvalue="JUnit.NumberConverterTest.testAsWordsNegative" />
       <item itemvalue="JUnit.NumberConverterTest" />
@@ -438,7 +412,7 @@
         <item itemvalue="JUnit.NumberConverterDataDrivenTest" />
         <item itemvalue="JUnit.NumberConverterTest.testAsWordsNegative" />
         <item itemvalue="JUnit.ThreeDigitNumberConverterTest" />
-        <item itemvalue="JUnit.ExponentOfThousandTest" />
+        <item itemvalue="JUnit.HighestExponentOfThousandConverterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -461,9 +435,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExponentOfThousandTest - 2018.07.21 at 02h 06m 37s.xml">
-      <configuration name="ExponentOfThousandTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ExponentOfThousandTest - 2018.07.21 at 02h 06m 59s.xml">
       <configuration name="ExponentOfThousandTest" configurationId="JUnit" />
     </history-entry>
@@ -491,13 +462,15 @@
     <history-entry file="NumberConverterDataDrivenTest - 2018.07.21 at 03h 03m 03s.xml">
       <configuration name="NumberConverterDataDrivenTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="NumberConverterTest - 2018.07.21 at 03h 04m 54s.xml">
+      <configuration name="NumberConverterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22506000" />
+    <option name="totallyTimeSpent" value="23050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -641,14 +614,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/HighestExponentOfThousand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
@@ -707,14 +680,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/HighestExponentOfThousand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
@@ -781,7 +754,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1830">
           <caret line="127" column="47" selection-start-line="127" selection-start-column="47" selection-end-line="127" selection-end-column="47" />
@@ -829,13 +802,6 @@
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/com.val.converter.NumberConverterDataDrivenTest.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/TestDataFileDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/NamesOfNumbersDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -867,31 +833,7 @@
     <entry file="file://$PROJECT_DIR$/number-converter.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ExponentOfThousandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/ExponentOfThousand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/val/converter/HighestExponentOfThousand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
@@ -920,13 +862,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/ThreeDigitNumberConverterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/TestDataFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/NumberConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/val/converter/HighestExponentOfThousandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

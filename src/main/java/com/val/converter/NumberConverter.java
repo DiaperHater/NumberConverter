@@ -1,7 +1,5 @@
 package com.val.converter;
 
-import com.val.converter.ExponentOfThousand;
-
 import java.math.BigInteger;
 import java.util.ArrayList;
 
@@ -12,7 +10,7 @@ import java.util.ArrayList;
 
 public class NumberConverter {
 
-    private final ExponentOfThousand exponentOfThousand = new ExponentOfThousand();
+    private final HighestExponentOfThousandConverter highestExponentOfThousandConverter = new HighestExponentOfThousandConverter();
     private final BigInteger ONE_THOUSAND = new BigInteger("1000");
 
     //Перегруженый asWords(BigInteger)
@@ -56,7 +54,7 @@ public class NumberConverter {
                 poweredThousand = ONE_THOUSAND.pow(exponent);
                 continue;
             }
-            sb.insert(0, " " + exponentOfThousand.asWords(nThExponentOfThousnd) );
+            sb.insert(0, " " + highestExponentOfThousandConverter.asWords(nThExponentOfThousnd) );
 
             ++exponent;
             poweredThousand = ONE_THOUSAND.pow(exponent);

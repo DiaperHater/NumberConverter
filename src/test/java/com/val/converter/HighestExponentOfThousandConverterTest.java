@@ -6,15 +6,15 @@ import java.math.BigInteger;
 
 import static org.junit.Assert.assertEquals;
 
-public class ExponentOfThousandTest {
+public class HighestExponentOfThousandConverterTest {
 
-    private  final ExponentOfThousand exponentOfThousand = new ExponentOfThousand();
+    private  final HighestExponentOfThousandConverter instance = new HighestExponentOfThousandConverter();
 
 
     @Test(expected = IllegalArgumentException.class)
     public void testAsWordsThrowsExceptionIfNegative(){
         BigInteger negativeNumber = BigInteger.valueOf(-2);
-        exponentOfThousand.asWords(negativeNumber);
+        instance.asWords(negativeNumber);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class ExponentOfThousandTest {
         String expected[] = {"один", "двенадцать", "девяносто пять"};
 
         for (int i = 0; i < args.length; i++){
-            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+            assertEquals("argument value = "+args[i] ,expected[i] , instance.asWords(args[i]));
         }
     }
 
@@ -35,7 +35,7 @@ public class ExponentOfThousandTest {
                 "сорок тысяч", "девяносто тысяч", "сто шестьдесят семь тысяч"};
 
         for (int i = 0; i < args.length; i++){
-            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+            assertEquals("argument value = "+args[i] ,expected[i] , instance.asWords(args[i]));
         }
     }
 
@@ -46,7 +46,7 @@ public class ExponentOfThousandTest {
                 ,"двадцать два триллиона", "девяносто квадриллионов"};
 
         for (int i = 0; i < args.length; i++){
-            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+            assertEquals("argument value = "+args[i] ,expected[i] , instance.asWords(args[i]));
         }
     }
 
@@ -57,7 +57,7 @@ public class ExponentOfThousandTest {
                 , "четыреста двадцать три миллиона", "восемьдесят четыре миллиарда"};
 
         for (int i = 0; i < args.length; i++){
-            assertEquals("argument value = "+args[i] ,expected[i] , exponentOfThousand.asWords(args[i]));
+            assertEquals("argument value = "+args[i] ,expected[i] , instance.asWords(args[i]));
         }
     }
 

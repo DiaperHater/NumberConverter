@@ -7,7 +7,7 @@ import java.math.BigInteger;
 * Данный класс используется для преобразования старшей
 * степени тысячи числа в его словесное представление
 */
-class ExponentOfThousand {
+class HighestExponentOfThousandConverter {
 
     private ThreeDigitNumberConverter threeDigitNumberConverter = new ThreeDigitNumberConverter();
     private NameListDao namesOfNumbersDao = new NamesOfNumbersDao();
@@ -15,12 +15,13 @@ class ExponentOfThousand {
     private BigInteger number;
 
 
-    //Метод преобразующий входной параметр num
-    //в его словесное представление
+    //Перегруженый asWords(BigInteger n)
     public String asWords(long n) {
         return asWords(new BigInteger(String.valueOf(n)));
     }
 
+    //Метод преобразующий входной параметр num
+    //в его словесное представление
     public String asWords(BigInteger n){
 
         number = n;
